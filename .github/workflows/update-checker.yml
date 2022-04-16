@@ -48,7 +48,7 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       uses: peter-evans/repository-dispatch@v1
       with:
-        token: ${{ secrets.x8664_v2 }}
+        token: ${{ secrets.x8664_v3 }}
         event-type: Source Code Update
 
     - name: Delete workflow runs
